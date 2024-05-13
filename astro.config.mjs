@@ -3,13 +3,18 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://noswaldev.github.io',
+	base: '',
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: {
-				github: 'https://github.com/withastro/starlight',
-			},
+			title: 'NoswalDev',
+			// social: {
+			// },
 			sidebar: [
+				{
+					label: 'Index',
+					link: '/',
+				},
 				{
 					label: 'Guides',
 					items: [
